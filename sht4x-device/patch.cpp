@@ -1,18 +1,21 @@
+// Tell XOD where it can download the libraries:
+#pragma "https://github.com/adafruit/Adafruit_SHT4X"
+
+//Include C++ libraries
+#include <Adafruit_SHT4x.h>
 
 node {
-    // Internal state variables defined at this level persists across evaluations
-    Number foo;
-    uint8_t bar = 5;
+    meta {
+        // Define our custom type as a pointer on the class instance.
+        using Type = Adafruit_SHT4x*;
+    }
+    // Keep Adafruit_SHT4x object in state
+    Adafruit_SHT4x sensor = Adafruit_SHT4x();
 
     void evaluate(Context ctx) {
-        bar += 42;
-
-        if (isSettingUp()) {
-            // This run once
-            foo = (Number)(bar + 1);
-        }
-
-        auto inValue = getValue<input_IN>(ctx);
-        emitValue<output_OUT>(ctx, inValue);
+        // It should be evaluated only once on the first (setup) transaction
+        if (!isSettingUp())
+            return;
+        emitValue<output_DEV>(ctx, &sensor);
     }
 }
