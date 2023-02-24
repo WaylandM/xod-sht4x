@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "SkHW-68Ci",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An sht4x-device.",
+      "id": "Hyj--TI0j",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sht4x-device"
+    },
+    {
+      "description": "Update. Pulse triggers read.",
+      "id": "SJaMZ6IRi",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Relative humidity (%).",
+      "id": "SJDrbTIRo",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Temperature (°C).",
+      "id": "BJgvS-aLRo",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "BkZPHWT8Rj",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Error code: 00h=OK, ",
+      "id": "SJGPSbaURs",
+      "label": "Error",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-byte"
+    }
+  ]
+}

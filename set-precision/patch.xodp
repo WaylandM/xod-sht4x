@@ -1,0 +1,36 @@
+{
+  "description": "Set precision. ",
+  "nodes": [
+    {
+      "id": "SkYfQTLAi",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An sht4x-device.",
+      "id": "SJfXX6I0j",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -2
+      },
+      "type": "@/input-sht4x-device"
+    },
+    {
+      "description": "Precision",
+      "id": "HyvE7680o",
+      "label": "Prec",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-byte"
+    }
+  ]
+}

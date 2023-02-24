@@ -1,0 +1,25 @@
+{
+  "description": "Create an sht4x-device.",
+  "nodes": [
+    {
+      "id": "BypxeTIRi",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An sht4x-device.",
+      "id": "rysbe6UCs",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -10,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/output-self"
+    }
+  ]
+}

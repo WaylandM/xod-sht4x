@@ -1,0 +1,58 @@
+{
+  "description": "Initialize sht4x-device.",
+  "nodes": [
+    {
+      "id": "S1D8e6ICo",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "I²C bus",
+      "id": "H1B5l6ICo",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "description": "An sht4x-device.",
+      "id": "ry09epI0j",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sht4x-device"
+    },
+    {
+      "description": "Initialize",
+      "id": "Syrhe6LCj",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse on initialization.",
+      "id": "Bk56gpLAj",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
+}
