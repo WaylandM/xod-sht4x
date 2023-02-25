@@ -1,2 +1,61 @@
 {
+  "description": "Configure heater.",
+  "nodes": [
+    {
+      "id": "H1NOfRLAi",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An sht4x-device.",
+      "id": "HJlVdzR80i",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sht4x-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "Sy-NOz0IAs",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Heater setting. Options: \n39h=high heat for 1 sec; 32h=high heat for 0.1 sec; 2Fh=med heat for 1 sec; 24h=med heat for 0.1 sec; 1Eh=low heat for 1 sec; 15=low heat for 0.1 sec.",
+      "id": "ryIKz08Ro",
+      "label": "Heat",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "description": "Pulse when heater set.",
+      "id": "rJPqf0LRj",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
 }
