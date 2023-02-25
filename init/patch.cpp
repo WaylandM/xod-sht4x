@@ -2,19 +2,22 @@
 #pragma XOD evaluate_on_pin enable input_INIT
 
 node {
-    // Internal state variables defined at this level persists across evaluations
-    Number foo;
-    uint8_t bar = 5;
 
     void evaluate(Context ctx) {
-        bar += 42;
 
-        if (isSettingUp()) {
-            // This run once
-            foo = (Number)(bar + 1);
+        // The node responds only if there is an input pulse
+        if (!isInputDirty<input_INIT>(ctx))
+            return;
+        
+        auto sensor = getValue<input_DEV>(ctx);
+        auto wire = getValue<input_I2C>(ctx);
+
+        // Attempt to initialize sht4x module; if attempt fails emit error
+        if (!sensor->begin(wire)) {
+            raiseError(ctx);
+            return;
         }
-
-        auto inValue = getValue<input_IN>(ctx);
-        emitValue<output_OUT>(ctx, inValue);
+        
+        emitValue<output_OK>(ctx, 1);
     }
 }

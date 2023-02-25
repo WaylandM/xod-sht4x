@@ -33,6 +33,9 @@
       "type": "@/input-sht4x-device"
     },
     {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
       "description": "Initialize",
       "id": "Syrhe6LCj",
       "label": "INIT",

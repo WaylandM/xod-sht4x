@@ -1,4 +1,5 @@
 {
+  "description": "Read relative humidity and temperature.",
   "nodes": [
     {
       "id": "SkHW-68Ci",
@@ -21,6 +22,9 @@
       "type": "@/input-sht4x-device"
     },
     {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
       "description": "Update. Pulse triggers read.",
       "id": "SJaMZ6IRi",
       "label": "UPD",
@@ -59,21 +63,10 @@
       "label": "Done",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
-      "description": "Error code: 00h=OK, ",
-      "id": "SJGPSbaURs",
-      "label": "Error",
-      "position": {
-        "units": "slots",
         "x": 2,
         "y": 2
       },
-      "type": "xod/patch-nodes/output-byte"
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }

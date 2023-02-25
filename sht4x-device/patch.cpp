@@ -1,5 +1,5 @@
 // Tell XOD where it can download the libraries:
-#pragma "https://github.com/adafruit/Adafruit_SHT4X"
+#pragma XOD require "https://github.com/adafruit/Adafruit_SHT4X"
 
 //Include C++ libraries
 #include <Adafruit_SHT4x.h>
