@@ -1,4 +1,5 @@
 {
+  "description": "Get heater configuration. ",
   "nodes": [
     {
       "id": "HkwflbSE6",
@@ -35,7 +36,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulse when precision set.",
+      "description": "Pulse when heater configuration read.",
       "id": "B1zDMlWBN6",
       "label": "Done",
       "position": {
@@ -46,7 +47,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Heater configuration.",
+      "description": "Heater configuration. Output: no heater = 00h, high heat 1s = 01h, high heat 100ms = 02h, medium heat 1s = 03h, medium heat 100ms = 04h, low heat 1s = 05h, low heat 100ms = 06h.",
       "id": "H1Xwzg-B46",
       "label": "Heat",
       "position": {

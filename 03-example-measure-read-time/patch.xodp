@@ -1,4 +1,5 @@
 {
+  "description": "Patch to demonstrate how heater and precision settings affect time required to read temperature and relative humidity. Run in debugger.",
   "links": [
     {
       "id": "rym5eGB4T",

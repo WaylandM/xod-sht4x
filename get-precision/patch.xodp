@@ -36,7 +36,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulse when precision set.",
+      "description": "Pulse when precision read.",
       "id": "H1mk51-rEp",
       "label": "Done",
       "position": {
@@ -47,7 +47,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
-      "description": "Precision",
+      "description": "Precision. Output: high = 00h, medium = 01h, low = 02h. ",
       "id": "BJBhkZBEp",
       "label": "Prec",
       "position": {

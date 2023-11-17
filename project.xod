@@ -1,4 +1,6 @@
 {
+  "description": "SHT4x relative humidity and temperature sensor. Tested using an SHT40 device. Wraps https://github.com/adafruit/Adafruit_SHT4X",
+  "license": "BSD",
   "name": "sht4x",
   "version": "0.0.1"
 }
