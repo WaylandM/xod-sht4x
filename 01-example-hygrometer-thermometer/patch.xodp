@@ -1,2 +1,188 @@
 {
+  "description": "Patch to test the hygrometer-thermometer node. Run in debugger.",
+  "links": [
+    {
+      "id": "Hkq2Hmr4a",
+      "input": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "BkAzhbSN6"
+      },
+      "output": {
+        "nodeId": "B1XhSQHVT",
+        "pinKey": "SykJ8wjXN"
+      }
+    },
+    {
+      "id": "SkshBQB4T",
+      "input": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "H1XQ3-S4T"
+      },
+      "output": {
+        "nodeId": "r1dhHXB4p",
+        "pinKey": "SykJ8wjXN"
+      }
+    },
+    {
+      "id": "ByPJLmHEp",
+      "input": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "SyhgR-B46"
+      },
+      "output": {
+        "nodeId": "rkqRBmrEa",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "SJqyUmSET",
+      "input": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "Hy1y0bBVp"
+      },
+      "output": {
+        "nodeId": "HkYaSQSVa",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "By7eLQHVp",
+      "input": {
+        "nodeId": "r1ye8mBNp",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "SJkxd91fB46"
+      }
+    },
+    {
+      "id": "H1pxUXSN6",
+      "input": {
+        "nodeId": "SyBg8mSNa",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "B1xeuq1GHNp"
+      }
+    },
+    {
+      "id": "H16WU7r46",
+      "input": {
+        "nodeId": "SkZWIQHNp",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "rkljH7S46",
+        "pinKey": "BkbguckzSNT"
+      }
+    },
+    {
+      "id": "rJCb8XHEa",
+      "input": {
+        "nodeId": "B18gIXBNT",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SkZWIQHNp",
+        "pinKey": "r1yhZRd8W"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "HkfOoZrEp": "On Boot"
+      },
+      "id": "rkljH7S46",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/hygrometer-thermometer"
+    },
+    {
+      "boundLiterals": {
+        "SykJ8wjXN": "01h"
+      },
+      "id": "B1XhSQHVT",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-byte"
+    },
+    {
+      "boundLiterals": {
+        "SykJ8wjXN": "00h"
+      },
+      "id": "r1dhHXB4p",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-byte"
+    },
+    {
+      "id": "HkYaSQSVa",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "5"
+      },
+      "id": "rkqRBmrEa",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "r1ye8mBNp",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SyBg8mSNa",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "B18gIXBNT",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "SkZWIQHNp",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    }
+  ]
 }

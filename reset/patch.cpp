@@ -1,4 +1,3 @@
-
 #pragma XOD evaluate_on_pin disable
 #pragma XOD evaluate_on_pin enable input_UPD
 
@@ -10,12 +9,10 @@ node {
             return;
 
         auto sensor = getValue<input_DEV>(ctx);
-        auto prec = getValue<input_Prec>(ctx);
-
-        if (prec < 3) {
-            sensor->setPrecision(prec);
-            emitValue<output_Done>(ctx, 1);
+        if(!sensor->reset()) {
+            raiseError(ctx);
+            return;
         }
-
+        emitValue<output_OK>(ctx, 1);
     }
 }

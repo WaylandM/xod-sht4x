@@ -1,2 +1,60 @@
 {
+  "nodes": [
+    {
+      "id": "HkwflbSE6",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "An sht4x-device.",
+      "id": "S1lwMlZH4T",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "@/input-sht4x-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "HJ-wMebrNp",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse when precision set.",
+      "id": "B1zDMlWBN6",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Heater configuration.",
+      "id": "H1Xwzg-B46",
+      "label": "Heat",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-byte"
+    }
+  ]
 }

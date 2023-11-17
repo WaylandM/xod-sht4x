@@ -9,7 +9,12 @@ node {
             return;
 
         auto sensor = getValue<input_DEV>(ctx);
-        sensor->setHeater(getValue<input_Heat>(ctx));
+        auto heater = getValue<input_Heat>(ctx);
+
+        if (heater < 7) {
+            sensor->setHeater(heater);
+            emitValue<output_Done>(ctx, 1);
+        }
         
         emitValue<output_Done>(ctx, 1);
     }

@@ -10,12 +10,8 @@ node {
             return;
 
         auto sensor = getValue<input_DEV>(ctx);
-        auto prec = getValue<input_Prec>(ctx);
-
-        if (prec < 3) {
-            sensor->setPrecision(prec);
-            emitValue<output_Done>(ctx, 1);
-        }
-
+        
+        emitValue<output_Prec>(ctx, sensor->getPrecision());
+        emitValue<output_Done>(ctx, 1);
     }
 }

@@ -1,4 +1,6 @@
 // Tell XOD where it can download the libraries:
+#pragma XOD require "https://github.com/adafruit/Adafruit_BusIO"
+#pragma XOD require "https://github.com/adafruit/Adafruit_Sensor"
 #pragma XOD require "https://github.com/adafruit/Adafruit_SHT4X"
 
 //Include C++ libraries

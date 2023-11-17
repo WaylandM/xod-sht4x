@@ -36,7 +36,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Heater setting. Options: \n39h=high heat for 1 sec; 32h=high heat for 0.1 sec; 2Fh=med heat for 1 sec; 24h=med heat for 0.1 sec; 1Eh=low heat for 1 sec; 15=low heat for 0.1 sec.",
+      "description": "Heater setting. Options: no heater = 00h, high heat 1s = 01h, high heat 100ms = 02h, medium heat 1s = 03h, medium heat 100ms = 04h, low heat 1s = 05h, low heat 100ms = 06h.",
       "id": "ryIKz08Ro",
       "label": "Heat",
       "position": {

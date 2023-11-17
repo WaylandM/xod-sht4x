@@ -1,8 +1,8 @@
 {
-  "description": "Get current precision.",
+  "description": "Performs a soft reset of the sensor to put it into a known state.",
   "nodes": [
     {
-      "id": "rJ15yZrEp",
+      "id": "HkMu3brVa",
       "position": {
         "units": "slots",
         "x": 0,
@@ -12,7 +12,7 @@
     },
     {
       "description": "An sht4x-device.",
-      "id": "BJxJ9J-S4a",
+      "id": "H1efd2bHEa",
       "label": "DEV",
       "position": {
         "units": "slots",
@@ -26,7 +26,7 @@
         "__out__": "Continuously"
       },
       "description": "Update.",
-      "id": "rJfJqJWBEa",
+      "id": "Bybz_hWBVa",
       "label": "UPD",
       "position": {
         "units": "slots",
@@ -36,26 +36,15 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulse when precision set.",
-      "id": "H1mk51-rEp",
-      "label": "Done",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
-      "description": "Precision",
-      "id": "BJBhkZBEp",
-      "label": "Prec",
+      "description": "Pulse on successful soft reset.",
+      "id": "HkQMd3bH4a",
+      "label": "OK",
       "position": {
         "units": "slots",
         "x": 0,
         "y": 2
       },
-      "type": "xod/patch-nodes/output-byte"
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }

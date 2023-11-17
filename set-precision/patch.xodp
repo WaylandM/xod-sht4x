@@ -2,6 +2,7 @@
   "description": "Set precision. ",
   "nodes": [
     {
+      "description": "SHT4X_HIGH_PRECISION,\n  SHT4X_MED_PRECISION,\n  SHT4X_LOW_PRECISION",
       "id": "SkYfQTLAi",
       "position": {
         "units": "slots",
@@ -22,7 +23,7 @@
       "type": "@/input-sht4x-device"
     },
     {
-      "description": "Precision",
+      "description": "Precision. Options: high = 00h, medium = 01h, low = 02h. ",
       "id": "HyvE7680o",
       "label": "Prec",
       "position": {
@@ -31,6 +32,31 @@
         "y": -2
       },
       "type": "xod/patch-nodes/input-byte"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update.",
+      "id": "rJdXRxB46",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Pulse when precision set.",
+      "id": "HkbVCgSET",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }
